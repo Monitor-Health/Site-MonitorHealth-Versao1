@@ -1,0 +1,136 @@
+:root{
+    --color-primary: #008B91;
+    --color-secondary: #6EADA7;
+    --color-strong: #0F5C60;
+    --color-light: #BBE5E1;
+    --color-gray: #737373;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.main-section-home{
+    position: relative;
+    width: fit-content;
+}
+
+.main-section-home .circuit-home{
+    position: absolute;
+    left: -175px;
+    top: 11px;
+    width: 580px;
+}
+
+.main-section-home .background-home{
+    margin-left: 44px;
+    width: 676px;
+}
+
+.title-home{
+    color: white;
+    font-size: 42px;
+    width: 640px;
+    margin: 0;
+}
+
+.text-home{
+    color: white;
+    font-size: 24px;
+    width: 532px;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.calculator-home{
+    width: 50px;
+}
+
+.calculate-home{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.budget-home{
+    height: 50px;
+    display: flex;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+header{ 
+    background-color: var(--color-secondary); 
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    color: white;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-weight: bold;
+}
+
+.client{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black
+}
+
+.client:hover{
+    background-color: var(--color-strong);
+    transition: .3s;
+    color: white;
+    opacity: .4;
+}
+
+.active{
+    color: var(--color-strong);
+}
+
+.pipeline{
+    color: var(--color-strong);
+    font-size: 32px;
+}
+
+.logo{
+    width: 200px;
+}

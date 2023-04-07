@@ -15,10 +15,25 @@ body{
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #88888838; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5555557c; 
+}
+
 main{
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .home{
@@ -59,6 +74,7 @@ main{
     width: 532px;
     margin: 0;
     margin-top: 16px;
+    font-weight: 500;
 }
 
 .calculator-home{
@@ -71,6 +87,13 @@ main{
     border-radius: 15px;
     text-decoration: none;
     color: black;
+}
+
+.calculate-home:hover{
+    background-color: var(--color-strong);
+    transition: .3s;
+    color: white;
+    opacity: .4;
 }
 
 .budget-home{
@@ -122,9 +145,6 @@ header nav ul{
     opacity: .4;
 }
 
-.active{
-    color: var(--color-strong);
-}
 
 .pipeline{
     color: var(--color-strong);
@@ -133,4 +153,62 @@ header nav ul{
 
 .logo{
     width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+a:hover{
+    color: var(--color-strong);
+    transition: .3s;
+}
+
+.aside-navbar{
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    
+}
+
+.arrow{
+    width: 50px;
+}
+
+.aside-navbar:hover{
+    transition: all .4s;
+    opacity: 0.7;
+}
+
+.about{
+    display: flex;
+    gap: 10px;
+}
+
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    padding: 82px;
+}
+
+.text-about{
+    font-weight: 500;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.title-about{
+    color: var(--color-strong);
+    font-size: 41px;
+    margin: 0;
+}
+
+.circuit-about{
+    position: absolute;
+    left: -175px;
 }

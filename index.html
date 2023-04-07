@@ -6,47 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
     <title>Monitor Health</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <a href="#">
                 <img class="logo" src="./src/assets/logo.png" alt="">
             </a>
             <ul>
-                <li class="active">Home</li>
-                <li>Quem somos?</li>
-                <li>VacSense</li>
-                <li>Simulador</li>
-                <li>Seja Cliente</li>
-                <li>Contato</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Quem somos?</a></li>
+                <li><a href="#">VacSense</a></li>
+                <li><a href="#">Simulador</a></li>
+                <li><a href="#">Seja Cliente</a></li>
+                <li><a href="#">Contato</a></li>
                 <li class="pipeline">|</li>
-                <a href="#" class="client">Área do cliente</a>
+                <li>
+                    <a href="#" class="client">Área do cliente</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home" class="home">
             <div class="main-section-home">
                 <img class="circuit-home" src="src/assets/circuito.png" alt="">
                 <img class="background-home" src="src/assets/background-home.png" alt="">
             </div>
             <aside>
                 <h1 class="title-home">Automatize sua operação e Reduza custos com IoT</h1>
-                <p class="text-home">Reduzir custos, agilizar processos, ter controle sobre os dados em tempo real para tomadas de decisões mais assertivas.</p>
+                <p class="text-home">
+                    Reduzir custos, agilizar processos, ter controle sobre os dados em tempo real para tomadas de decisões mais assertivas.
+                </p>
                 <div class="budget-home">    
                     <a href="#" class="calculate-home">
                         Calcule sua economia
                     </a>
                     <img class="calculator-home" src="./src/assets/calculadora.png" alt="">
                 </div>
-                
             </aside>
         </section>
-        
+        <aside class="aside-navbar">
+            <div class="aside-div-navbar">
+                <a href="#navbar">
+                    <img class="arrow" src="src/assets/seta.png" alt="">
+                </a>                
+            </div>
+        </aside>
+        <section id="about" class="about">
+            <img class="circuit-about" src="src/assets/circuito.png" alt="">
+            <div class="content-about">
+                <h1 class="title-about">Quem somos?</h1> 
+                <p class="text-about">
+                    A Monitor Health é uma empresa de tecnologia com foco em IoT (Internet das Coisas), com o objetivo principal de     desenvolver soluções simples e efetivas para problemas de armazenamento e segurança em áreas da saúde. 
+                </p>
+                <p class="text-about">
+                    Coletamos e analisamos dados de ambientes ou equipamentos para transformá-los em resultados de fácil análise, de forma prática, escalável, simples, eficiente e de baixo custo. Isso proporciona sempre uma otimização e redução dos custos mensais de manutenção e consumo.
+                </p>
+            </div>
+            <img class="background-about" src="src/assets/background-about.svg" alt="">
+        </section>
     </main>
+    
 </body>
 </html>
